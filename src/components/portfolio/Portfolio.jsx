@@ -1,11 +1,9 @@
 import "./portfolio.css";
 
-import IMG1 from "../../assets/Flexcavo.png";
-import IMG2 from "../../assets/Meetnative.png";
-import IMG3 from "../../assets/Mobinspire.png";
-import IMG4 from "../../assets/Raise.png";
-import IMG5 from "../../assets/Potsave.png";
-import IMG6 from "../../assets/Health.png";
+import IMG1 from "https://media.discordapp.net/attachments/1295456424759136367/1295465151390027926/image-6.png?ex=670f6830&is=670e16b0&hm=b3fdab5a6e82dc5406f6b61c13455e60ec466199666ae00980ea497310c6d570&=&format=webp&quality=lossless&width=424&height=676";
+import IMG2 from "https://media.discordapp.net/attachments/1295456424759136367/1295465152014974989/image-5.png?ex=670f6830&is=670e16b0&hm=30bbbc470d4e8526f283956fa6145933e4d2fddfb11dba1ae6727249fe3d6638&=&format=webp&quality=lossless&width=508&height=676";
+import IMG3 from "https://mir-s3-cdn-cf.behance.net/project_modules/1400/cdc450198990449.664aa3dc2d158.png";
+import IMG4 from "https://mir-s3-cdn-cf.behance.net/project_modules/1400/525a00201982027.667dcab9cb974.png";
 import React from "react";
 
 //Portfolio function
@@ -13,57 +11,39 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: "Flexcavo",
+      title: "LothusShop",
       img: IMG1,
       description:
-        "It is the website for construction machine renting company (Flexcavo) from Berlin",
-      technologies: "React.js | Pixel-perfect | SCSS | Styled Component",
-      link: "https://www.flexcavo.de/",
+        "Website",
+      technologies: "React",
+      link: "/",
     },
     {
       id: 2,
-      title: "Meet Native",
+      title: "LothusHost",
       img: IMG2,
       description:
-        "MeetNative is an upselling platform that helps consumers and local businesses get more for their money.",
-      technologies: "React | React Native | Android | iOS",
-      link: "https://meetnative.com/",
+        "Website",
+      technologies: "React",
+      link: "/",
     },
     {
       id: 3,
-      title: "Mob Inspire",
+      title: "Nuuvem",
       img: IMG3,
       description:
-        "Mob Inspire streamlines the business operations in corporate sector by providing cost-effective and highly productive software solutions.",
-      technologies: "Nginx | PHP | MySQL | jQuery",
-      link: "https://www.mobinspire.com/",
+        "Website",
+      technologies: "React",
+      link: "/",
     },
     {
       id: 4,
-      title: "Raise",
+      title: "Storigan",
       img: IMG4,
       description:
-        "Get started with free educational courses to mastery the foundations of startup equity as an African business.",
-      technologies: "Remix | React.js | Webflow | jQuery",
-      link: "https://www.raise.africa/",
-    },
-    {
-      id: 5,
-      title: "Potsave",
-      img: IMG5,
-      description:
-        "Through the PotSave.com platform, PotSave offers in-person product assessment and ordering services, accessible via the website, mobile applications, and software.",
-      technologies: "React | Next.js | Lodash | Tailwind CSS",
-      link: "https://dev-pwa.potsave.com/",
-    },
-    {
-      id: 6,
-      title: "Health",
-      img: IMG6,
-      description:
-        "U of U Health is the Mountain West's only academic health care system. We provide patient care, medical research, and physician training.",
-      technologies: "Angular | Drupal | Nginx | TypeScript",
-      link: "https://healthcare.utah.edu/",
+        "Website",
+      technologies: "React",
+      link: "/",
     },
   ];
 
@@ -84,14 +64,6 @@ const Portfolio = () => {
               <p>{pro.technologies}</p>
             </div>
             <div className="portfolio__item-cta">
-              <a
-                href={pro.link}
-                target="_blank"
-                className="btn btn-primary"
-                rel="noreferrer"
-              >
-                Live Demo
-              </a>
             </div>
           </article>
         ))}
